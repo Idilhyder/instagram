@@ -20,9 +20,4 @@ const config = {
 const firebase = Firebase.initializeApp(config);
 const { FieldValue } = Firebase.firestore;
 
-// call import seedDatabase
-
-seedDatabase(firebase);
-
 export { firebase, FieldValue };
-
