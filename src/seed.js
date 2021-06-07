@@ -40,11 +40,13 @@ export function seedDatabase(firebase) {
   ];
 
   // eslint-disable-next-line prefer-const
+  // eslint-disable-next-line no-plusplus
   for (let k = 0; k < users.length; k++) {
     firebase.firestore().collection('users').add(users[k]);
   }
 
   // eslint-disable-next-line prefer-const
+  // eslint-disable-next-line no-plusplus
   for (let i = 1; i <= 5; ++i) {
     firebase
       .firestore()

@@ -1,11 +1,25 @@
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
+  future: {
+    removeDepreciatedGapUtilities: true
+  },
   theme: {
-    extend: {},
-  },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
-}
+    colors: {
+      white: '#ffffff',
+      blue: {
+        medium: '#005c98'
+      },
+      black: {
+        medium: '#005c98',
+        faded: '#00000059'
+      },
+      gray: {
+        base: '#616161',
+        background: '#fafafa',
+        primary: '#dbdbdb'
+      },
+      red: {
+        primary: '#ed4956'
+      }
+    }
+  }
+};
